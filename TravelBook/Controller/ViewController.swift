@@ -11,6 +11,7 @@ import CoreLocation
 import CoreData
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    @IBOutlet weak var SaveButtonClick: UIButton!
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var commentText: UITextField!
     @IBOutlet weak var mapView: MKMapView!
@@ -39,6 +40,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.addGestureRecognizer(gestureRecognizer)
         
         if selectedTitle != "" {
+            SaveButtonClick.isHidden = true
             //Core Data
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let contex = appDelegate.persistentContainer.viewContext
@@ -158,7 +160,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if selectedTitle != "" {
-            var requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
+            let requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
             
             CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in
                 //closure

@@ -62,15 +62,39 @@
 			children = (
 				F1114D232C7E2E4F0025E4EB /* AppDelegate.swift */,
 				F1114D252C7E2E4F0025E4EB /* SceneDelegate.swift */,
-				F1114D272C7E2E4F0025E4EB /* ViewController.swift */,
-				F1114D3A2C7E59D70025E4EB /* LisViewController.swift */,
-				F1114D292C7E2E4F0025E4EB /* Main.storyboard */,
+				F1E984FA2CA33C6700380F34 /* Model */,
+				F1E984F82CA33C4800380F34 /* Controller */,
+				F1E984F92CA33C5C00380F34 /* View */,
 				F1114D2F2C7E2E520025E4EB /* Assets.xcassets */,
 				F1114D312C7E2E520025E4EB /* LaunchScreen.storyboard */,
 				F1114D342C7E2E520025E4EB /* Info.plist */,
 				F1114D2C2C7E2E4F0025E4EB /* TravelBook.xcdatamodeld */,
 			);
 			path = TravelBook;
+			sourceTree = "<group>";
+		};
+		F1E984F82CA33C4800380F34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1114D272C7E2E4F0025E4EB /* ViewController.swift */,
+				F1114D3A2C7E59D70025E4EB /* LisViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1E984F92CA33C5C00380F34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1114D292C7E2E4F0025E4EB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1E984FA2CA33C6700380F34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
