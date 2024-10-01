@@ -1,5 +1,3 @@
-TravelBook
-Descripción:
 TravelBook es una innovadora aplicación para iOS que permite a los usuarios explorar y guardar sus ubicaciones favoritas utilizando MapKit.
 Con una interfaz intuitiva, los usuarios pueden marcar lugares en el mapa, añadir descripciones personalizadas y acceder fácilmente a sus
 registros en un formato de lista. Ideal para viajeros y exploradores urbanos, TravelBook hace que la organización de tus descubrimientos sea sencilla y accesible.
